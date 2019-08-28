@@ -4,11 +4,12 @@ services:
   ipt:
     image: gbif/ipt
     expose:
-      - '80:8080'
+      - '8080'
     volumes:
       - ./data-directory:/srv/ipt
     environment:
       - VIRTUAL_HOST=archive.gbif.no
+      - LETSENCRYPT_HOST=archive.gbif.no
 
 networks:
   default:
