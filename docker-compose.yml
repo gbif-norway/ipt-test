@@ -8,8 +8,8 @@ services:
     volumes:
       - ./data-directory:/srv/ipt
     environment:
-      - VIRTUAL_HOST=archive.gbif.no
-      - LETSENCRYPT_HOST=archive.gbif.no
+      - VIRTUAL_HOST=ipt-test.gbif.no
+      - LETSENCRYPT_HOST=ipt-test.gbif.no
 
 networks:
   default:
