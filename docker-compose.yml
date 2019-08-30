@@ -2,7 +2,7 @@ version: '3'
 
 services:
   ipt:
-    image: gbif/ipt
+    image: gbif/ipt:2.4.0
     expose:
       - '8080'
     volumes:
