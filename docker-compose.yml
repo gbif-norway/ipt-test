@@ -2,6 +2,7 @@ version: '3'
 
 services:
   ipt:
+    restart: always
     image: gbif/ipt:2.4.0
     expose:
       - '8080'
